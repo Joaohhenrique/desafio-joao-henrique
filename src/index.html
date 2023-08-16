@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cardápio</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .content {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+
+  </style>
+</head>
+<body>
+    <h2>Lanchonete da DB</h2>
+    <table style>
+        <tr>
+          <th>Código</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>cafe</td>
+          <td>Café</td>
+          <td>R$ 3,00</td>
+        </tr>
+        <tr>
+          <td>chantily</td>
+          <td>Chantily (extra do Café)</td>
+          <td>R$ 1,50</td>
+        </tr>
+        <tr>
+          <td>suco</td>
+          <td>Suco Natural</td>
+          <td>R$ 6,20</td>
+        </tr>
+        <tr>
+          <td>sanduiche</td>
+          <td>Sanduíche</td>
+          <td>R$ 6,50</td>
+        </tr>
+        <tr>
+          <td>queijo</td>
+          <td>Queijo (extra do Sanduíche)</td>
+          <td>R$ 2,00</td>
+        </tr>
+        <tr>
+          <td>salgado</td>
+          <td>Salgado</td>
+          <td>R$ 7,25</td>
+        </tr>
+        <tr>
+          <td>combo1</td>
+          <td>1 Suco e 1 Sanduíche</td>
+          <td>R$ 9,50</td>
+        </tr>
+        <tr>
+          <td>combo2</td>
+          <td>1 Café e 1 Sanduíche</td>
+          <td>R$ 7,50</td>
+        </tr>
+      </table>
+      <button id="adicionarItens">Adicionar Itens</button>
+      <button id="calcularValor">Fechar Pedido</button>      
+</body>
+<script type="module" src="caixa-da-lanchonete.js"></script>
+</html>
